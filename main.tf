@@ -8,7 +8,7 @@ resource "aws_instance" "server" {
   key_name= "durgakeypair.pem"
   vpc_security_group_ids = ["sg-0af871da3173f77dc"]
   tags = {
-  Name=var.instance_names[count_index]
+  Name = var.instance_names[count_index]
   }
 }
 variable "instance_names" {
